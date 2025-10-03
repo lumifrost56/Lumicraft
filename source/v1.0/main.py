@@ -267,7 +267,7 @@ xt = False
 # create the world
 world = World()
 
-# add points
+# add blocks
 world.add([1, 0, 5])
 world.add([1, 1, 5])
 world.add([3, 0, 2])
@@ -302,4 +302,5 @@ while True:
     clock.tick(60)
 
 # exit at the end
+
 pg.quit()
