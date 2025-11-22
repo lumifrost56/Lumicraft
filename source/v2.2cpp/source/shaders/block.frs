@@ -1,0 +1,12 @@
+#version 330 core
+
+out vec4 FragColor;
+
+in vec2 new_uv;
+in float new_tex_id;
+
+uniform sampler2DArray block_tex_array;
+
+void main() {
+    FragColor = texture(block_tex_array, vec3(new_uv, new_tex_id));
+}
